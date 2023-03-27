@@ -1,1 +1,1 @@
-.arquivoteste.txt
+arquivoteste
