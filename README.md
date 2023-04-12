@@ -1,7 +1,6 @@
-# calculadora-poker
+###   
+Para usar a Calculador Poker:
 
-
-- Para usar a Calculador Poker:
- -- clone o repositório
- -- baixe as dependências 
- -- modifique e execute app/main.py
+*   Clone o repositório:
+*   Baixe as dependências 
+*   Modifique e execute app/main.py
