@@ -1,7 +1,6 @@
 
 import concurrent.futures
 from multiprocessing import cpu_count
-from multiprocessing import freeze_support
 from random import shuffle
 from time import time
 from itertools import combinations
@@ -85,7 +84,7 @@ class Baralho:
         dobras = [[], [], [], []]
         idx_dobra = 0
         for idx_valor in range(1, len(valores)):
-            if valores[idx_valor] == valores[idx_valor -1] :
+            if valores[idx_valor] == valores[idx_valor -1]:
                 idx_dobra += 1
             else:
                 dobras[idx_dobra].append(valores[idx_valor-1])
@@ -217,4 +216,4 @@ class Equidade:
             txt += f"\n{chave}= {100 * (valor['eq_v'] + valor['eq_e']) / self.iteracoes:.2f}%"
             txt += f"\n\tvit= {100 * valor['eq_v'] / self.iteracoes:.2f}%"
             txt += f"\n\temp= {100 * valor['eq_e'] / self.iteracoes:.2f}%\n"
-        return consolidado, txt
+        return {'results': consolidado, 'caption': txt}
